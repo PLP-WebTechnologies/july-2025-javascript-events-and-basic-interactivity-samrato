@@ -1,0 +1,55 @@
+/* 🎨 General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Part 1: Button hover effect */
+.fancy-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.fancy-btn:hover {
+  transform: scale(1.1);
+  background: #45a049;
+}
+
+/* Part 2: Box animation triggered by JS */
+#box {
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  margin: 20px auto;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+#box.animate {
+  transform: rotate(360deg) scale(1.5);
+  background: tomato;
+}
+
+/* Part 3: Modal with keyframes */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideIn 0.5s ease;
+}
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
