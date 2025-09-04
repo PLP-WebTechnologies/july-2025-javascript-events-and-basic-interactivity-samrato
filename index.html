@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚀 Interactive Web Page</h1>
+
+  <!-- 🎮 Part 1: Event Handling -->
+  <section>
+    <h2>🎮 Event Handling</h2>
+    <button id="alertBtn">Click Me!</button>
+    <p id="hoverText">Hover over me to see the magic ✨</p>
+  </section>
+
+  <!-- 🎮 Part 2: Interactive Features -->
+  <section>
+    <h2>🎉 Interactive Features</h2>
+    <!-- Feature 1: Dark Mode Toggle -->
+    <button id="toggleModeBtn">🌙 Toggle Dark Mode</button>
+
+    <!-- Feature 2: Counter -->
+    <div class="counter">
+      <p>Counter: <span id="countValue">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="decreaseBtn">Decrease</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </section>
+
+  <!-- 📋 Part 3: Form Validation -->
+  <section>
+    <h2>📋 Form Validation</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" placeholder="Enter your name">
+        <small class="error" id="nameError"></small>
+      </label>
+      <br>
+
+      <label>
+        Email:
+        <input type="text" id="email" placeholder="Enter your email">
+        <small class="error" id="emailError"></small>
+      </label>
+      <br>
+
+      <label>
+        Password:
+        <input type="password" id="password" placeholder="Enter password">
+        <small class="error" id="passwordError"></small>
+      </label>
+      <br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formSuccess" class="success"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
